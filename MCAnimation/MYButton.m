@@ -26,7 +26,7 @@
     button.layer.cornerRadius = initialFrame.size.height/2;
     button.layer.masksToBounds = YES;
     button.backgroundLayer = [[CALayer alloc]init];
-    button.backgroundLayer.cornerRadius = (initialFrame.size.height - 10)/2;
+    button.backgroundLayer.cornerRadius = (initialFrame.size.height - 8)/2;
     button.backgroundLayer.backgroundColor = [UIColor orangeColor].CGColor;
     button.backgroundLayer.masksToBounds = YES;
     [button.layer addSublayer:button.backgroundLayer];
@@ -104,14 +104,14 @@
 
         case StretchDown:
             
-            self.backgroundLayer.frame = CGRectMake(5, 0, self.initialFrame.size.width - 10, self.initialFrame.size.height + CHANGE_VALUE);
+            self.backgroundLayer.frame = CGRectMake(4, 0, self.initialFrame.size.width - 8, self.initialFrame.size.height + CHANGE_VALUE);
             break;
             
         case StretchLeft:
         
         case StretchRight:
             
-            self.backgroundLayer.frame = CGRectMake(0, 5, self.initialFrame.size.width + CHANGE_VALUE, self.initialFrame.size.height - 10);
+            self.backgroundLayer.frame = CGRectMake(0, 4, self.initialFrame.size.width + CHANGE_VALUE, self.initialFrame.size.height - 8);
             break;
             
         default:
