@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    StretchLeft,
+    StretchRight,
+    StretchUp,
+    StretchDown,
+} MCAnimationOptions;
 
 @interface MYButton : UIButton
-+(id)buttonWithType:(UIButtonType)buttonType initialFrame:(CGRect)initialFrame content:(NSString *)content;
+
+@property (nonatomic,assign) MCAnimationOptions animationOptions;
+
++(id)buttonWithType:(UIButtonType)buttonType initialFrame:(CGRect)initialFrame;
 @end

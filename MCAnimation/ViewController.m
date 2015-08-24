@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MYButton * button = [MYButton buttonWithType:UIButtonTypeCustom initialFrame:CGRectMake(200, 200, 30, 30) content:@"测试"];
+    MYButton * button = [MYButton buttonWithType:UIButtonTypeCustom initialFrame:CGRectMake(200, 200, 30, 30)];
     [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    button.animationOptions = StretchDown;
     [self.view addSubview:button];
 }
 
