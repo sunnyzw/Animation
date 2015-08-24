@@ -14,6 +14,7 @@
 		B36A4ED61B8AB17200BF22AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36A4ED51B8AB17200BF22AE /* Images.xcassets */; };
 		B36A4ED91B8AB17200BF22AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36A4ED71B8AB17200BF22AE /* LaunchScreen.xib */; };
 		B36A4EE51B8AB17200BF22AE /* MCAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A4EE41B8AB17200BF22AE /* MCAnimationTests.m */; };
+		B36A4EF01B8AB18100BF22AE /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A4EEF1B8AB18100BF22AE /* MYButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B36A4EDE1B8AB17200BF22AE /* MCAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A4EE31B8AB17200BF22AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36A4EE41B8AB17200BF22AE /* MCAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAnimationTests.m; sourceTree = "<group>"; };
+		B36A4EEE1B8AB18100BF22AE /* MYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYButton.h; sourceTree = "<group>"; };
+		B36A4EEF1B8AB18100BF22AE /* MYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		B36A4EC71B8AB17200BF22AE /* MCAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B36A4EEE1B8AB18100BF22AE /* MYButton.h */,
+				B36A4EEF1B8AB18100BF22AE /* MYButton.m */,
 				B36A4ECC1B8AB17200BF22AE /* AppDelegate.h */,
 				B36A4ECD1B8AB17200BF22AE /* AppDelegate.m */,
 				B36A4ECF1B8AB17200BF22AE /* ViewController.h */,
@@ -222,6 +227,7 @@
 				B36A4ED11B8AB17200BF22AE /* ViewController.m in Sources */,
 				B36A4ECE1B8AB17200BF22AE /* AppDelegate.m in Sources */,
 				B36A4ECB1B8AB17200BF22AE /* main.m in Sources */,
+				B36A4EF01B8AB18100BF22AE /* MYButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

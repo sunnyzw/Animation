@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MYButton.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    MYButton * button = [MYButton buttonWithType:UIButtonTypeCustom initialFrame:CGRectMake(200, 200, 30, 30) content:@"测试"];
+    [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
+
+- (void)test {
+    NSLog(@"ssss");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
